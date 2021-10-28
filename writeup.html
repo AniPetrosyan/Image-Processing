@@ -1,0 +1,166 @@
+<head>
+    <meta charset="UTF-8">
+
+    <!-- the next three lines try to discourage browser from keeping page in cache -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="cache-control" content="no-store">
+
+    <title> ԹՈՒՄՈ «Համակարգչային գրաֆիկա» 1- Նկարներ &mdash; Writeup</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="js/student.js"> </script>
+    <script src="coursejs/writeup.js"> </script>
+    <div class="main_div">
+
+        <h1>
+            <div class=assignment>ԹՈՒՄՈ «Համակարգչային գրաֆիկա» 1- Նկարներ &mdash; Batch Mode
+        </h1>
+        <h2>Switch to: <a href='index.html'>Interactive Editor</a></h2>
+        <div class='selectable'>
+            <h2 id='student'></h2>
+
+            Features Implemented:
+            <ul>
+                <li>(0.0) <a href='#Brightness'>Brightness</a></li>
+                <li>(0.5) <a href='#Contrast'>Contrast</a></li>
+
+                <!-- shutov
+<li>(2.0) <a href='#Histogram+equalization'>Histogram equalization</a></li>
+-->
+                <li>(0.5) <a href='#Sharpen'>Sharpen</a></li>
+                <li>(0.0) <a href='#Quantize'>Quantize</a></li>
+                <li>(0.5) <a href='#Random+dither'>Random dither</a></li>
+                <li>(1.0) <a href='#Floyd-Steinberg+dither'>Floyd-Steinberg dither</a></li>
+                <li>(1.0) <a href='#Sampling'>Sampling</a></li>
+                <li>(3.0) <a href='#Morph'>Morph</a></li>
+            </ul>
+        </div>
+
+        <p>
+            <hr>
+        <p><a name='Brightness'></a>
+        <h2>Brightness</h2>
+        <p>
+            <hr>
+        <p>
+
+        <p>
+            Here is an example output where the image is made brigher with
+            <a href='batch.html?Push%20Image=flower.jpg&Brightness=0.3'>the
+                luminance slider set to 0.3</a>:
+        <p>
+            <img src='results/luminance0.3.png'>
+        <p>
+            Here is an example output where the image is made darker with
+            <a href='batch.html?Push%20Image=flower.jpg&Brightness=-0.5'>the
+                luminance slider set to -0.5</a>:
+        <p>
+            <img src='results/luminance-0.5.png'>
+        <p>
+            I did not encounter any particular challenges in implementing this.
+
+            <hr>
+        <p><a name='Contrast'></a>
+        <h2>Contrast</h2>
+        <p>
+            <hr>
+        <p>
+
+            <a href='batch.html?Push_Image=leaves.jpg&Contrast=-1'>Push_Image=leaves.jpg&Contrast=-1</a>
+
+            <br><img src='results/placeholder.png'><br> <a
+                href='batch.html?Push_Image=leaves.jpg&Contrast=0.7'>Push_Image=leaves.jpg&Contrast=0.7</a>
+
+            <br><img src='results/placeholder.png'><br> <a
+                href='batch.html?Push_Image=leaves.jpg&Contrast=-0.8'>Push_Image=leaves.jpg&Contrast=-0.8</a>
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Histogram+equalization'></a>
+        <h2>Histogram equalization</h2>
+        <p>
+            <hr>
+        <p>
+
+
+            <a
+                href='batch.html?Push_Image=flower.jpg&Histogram_Equalization='>Push_Image=flower.jpg&Histogram_Equalization=</a>
+
+            <br><img src='results/placeholder.png'><br> <a
+                href='batch.html?Push_Image=leaves.jpg&Histogram_Equalization='>Push_Image=leaves.jpg&Histogram_Equalization=</a>
+
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Sharpen'></a>
+        <h2>Sharpen</h2>
+        <p>
+            <hr>
+        <p>
+
+
+            <a href='batch.html?Push_Image=leaves.jpg&Sharpen='>Push_Image=leaves.jpg&Sharpen=</a>
+
+            <br><img src='results/placeholder.png'><br> <a
+                href='batch.html?Push_Image=woman.jpg&Sharpen='>Push_Image=woman.jpg&Sharpen=</a>
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Edge+detect'></a>
+        <h2>Edge detect</h2>
+        <p>
+            <hr>
+        <p>
+
+
+            <a href='batch.html?Push_Image=leaves.jpg&Edge='>Push_Image=leaves.jpg&Edge=</a>
+
+            <br><img src='results/placeholder.png'><br> <a
+                href='batch.html?Push_Image=woman.jpg&Edge='>Push_Image=woman.jpg&Edge=</a>
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Random+dither'></a>
+        <h2>Random dither</h2>
+        <p>
+            <hr>
+        <p>
+
+            <a href='batch.html?Push_Image=mesa.jpg&Random='>Push_Image=mesa.jpg&Random=</a>
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Floyd-Steinberg+dither'></a>
+        <h2>Floyd-Steinberg dither</h2>
+        <p>
+            <hr>
+        <p>
+
+            <a href='batch.html?Push_Image=mesa.jpg&Floyd-Steinberg='>Push_Image=mesa.jpg&Floyd-Steinberg=</a>
+
+            <br><img src='results/placeholder.png'>
+        <p>
+            <hr>
+        <p><a name='Morph'></a>
+        <h2>Morph</h2>
+        <p>
+            <hr>
+        <p>
+
+            <a
+                href='batch.html?Push_Image=chang.jpg&Push_Image=halber.jpg&Morph=(0,1,0.1)'>Push_Image=chang.jpg&Push_Image=halber.jpg&Morph=(0,1,0.1)</a>
+
+    </div>
+    <span style="float:right;font-size: 10px;margin-right: 15px">Համակարգչային գրաֆիկա</span>
+
+</body>
+
+</html>
